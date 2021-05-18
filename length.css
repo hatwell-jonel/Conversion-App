@@ -1,0 +1,41 @@
+#length{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto',sans-serif;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.length{
+    border-radius: 8px;
+    background: rgba(255,255,255, 0.1);
+    height: 300px;
+    width: 250px;
+    border-right: rgba(255,255,255, .8) solid 1px;
+    border-bottom: rgba(255,255,255, .8) solid 1px;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.flex{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.flex p {
+    left: 0;
+}
+
+.flex input{
+    height: 20px;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: right;
+}

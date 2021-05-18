@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion app</title>
+    <link rel="stylesheet" href="./css/fontawesome/fontawesome-free-5.15.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="./css/length.css">
+    <link rel="stylesheet" href="./css/binary.css">
+    <link rel="stylesheet" href="./css/weight.css">
+    <link rel="stylesheet" href="./css/temperature.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <h1 class="logo">Conversion <span>App</span></h1>
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+         <ul>
+                <a href="#calculator"><li class='toggle'>Calculator</li></a>
+                <a href="#length"><li class="toggle">Length</li></a>
+                <a href="#numeric"><li class="toggle">Binary</li></a>
+                <a href="#weight"><li class="toggle">Weight</li></a>
+                <a href="#temperature"><li class="toggle">Temparature</li></a>
+         </ul>
+    </div>
+
+    <main>
+        <section id="calculator">
+
+            <div class="calculator">
+                <div class="display">
+                    <div class="display-upper"></div>
+                    <div class="display-lower"></div>
+                </div>
+                
+                <div class="keypad">
+                    <button class="operator clear-all">C</button>
+                    <button class="operator clear-last-ent">DEL</button>
+                    <button class="operator">/</button>
+
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">*</button>
+
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator">-</button>
+
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator">+</button>
+                   
+                   
+                    <button class="number">.</button>
+                    <button class="number">0</button>
+                    <button class="equals">=</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="length">
+            <div class="length">
+                 <h1>LENGTH</h1>
+                <div class="flex">
+                    <p>Meter:</p>
+                    <input id='mtr' type="number">
+                </div>
+                <div class="flex">
+                    <p>Inch:</p>
+                    <input id='in' type="number">
+                </div>
+                <div class="flex">
+                    <p>Kilometer:</p>
+                    <input id='km' type="number">
+                </div>
+                <div class="flex">
+                    <p>Feet:</p>
+                    <input id='ft' type="number">
+                </div>
+                <div class="flex">
+                    <p>Mile:</p>
+                    <input id='ml' type="number">
+                </div>
+                <div class="flex">
+                    <p>Yard:</p>
+                    <input id='yr' type="number">
+                </div>
+                <button id='clear-length'>CLEAR</button>
+
+            </div>
+        </section>
+
+        <section id="numeric">
+            <div class="numeric">
+                <h1>Numeric Base</h1>
+                <div class="flex">
+                    <p>Binary:</p>
+                    <input id='bin' type="number" min="0" max="1">
+                </div>
+                <div class="flex">
+                    <p>Decimal:</p>
+                    <input id='dec' type="text">
+                </div>
+                <div class="flex">
+                    <p>Octal:</p>
+                    <input id='oct' type="text">
+                </div>
+                <div class="flex">
+                    <p>Hexadecimal:</p>
+                    <input id='hex' type="text">
+                </div>
+                <button id='clear-numeric'>CLEAR</button>
+
+            </div>
+        </section>
+
+        <section id="weight">
+            <div class="weight-cont">
+                <h1>Weight</h1>
+                <div class="flex">
+                    <p>Gram:</p>
+                    <input id='g' type="number">
+                </div>
+                <div class="flex">
+                    <p>Kilogram:</p>
+                    <input id='kg' type="number">
+                </div>
+                <div class="flex">
+                    <p>Ton:</p>
+                    <input  id='tn'type="number">
+                </div>
+                <div class="flex">
+                    <p>Ounce:</p>
+                    <input id='onc' type="number">
+                </div>
+                <div class="flex">
+                    <p>Pound:</p>
+                    <input id='pnd' type="number">
+                </div>
+                
+                <button id='clear-weight'>CLEAR</button>
+
+            </div>
+        </section>
+
+        <section id="temperature">
+            <div class="temperature">
+                <h1>Temperature</h1>
+                <div class="flex">
+                    <p>Celsius:</p>
+                    <input id='celsius' type="number">
+                </div>
+                <div class="flex">
+                    <p>Fahrenheit:</p>
+                    <input id='fahrenheit' type="number">
+                </div>
+                <div class="flex">
+                    <p>Kelvin:</p>
+                    <input id='kelvin' type="number">
+                </div>
+                <button id='clear-temp'>CLEAR</button>
+            </div>
+        </section>
+    </main>
+
+    <div class="bubbles-container">
+        <span class="bubbles one"></span>
+        <span class="bubbles two"></span>
+        <span class="bubbles three"></span>
+        <span class="bubbles four"></span>
+        <span class="bubbles five"></span>
+        <span class="bubbles six"></span>
+    </div>
+
+    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/length.js"></script>
+    <script src="./js/binary.js"></script>
+    <script src="./js/weight.js"></script>
+    <script src="./js/temperature.js"></script>
+</body>
+</html>
